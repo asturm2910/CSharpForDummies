@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpForDummies", "CSharpF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskInterruption", "TaskInterruption\TaskInterruption.csproj", "{086F3E47-522C-49F0-ABDA-4C447FC40F24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitExample", "AsyncAwaitExample\AsyncAwaitExample.csproj", "{B43591F6-DF8C-4DDE-97EC-923F96D67B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\LINQExample.csproj", "{15F0D91D-9BFD-433D-89BA-CC28040180B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{086F3E47-522C-49F0-ABDA-4C447FC40F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086F3E47-522C-49F0-ABDA-4C447FC40F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086F3E47-522C-49F0-ABDA-4C447FC40F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43591F6-DF8C-4DDE-97EC-923F96D67B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43591F6-DF8C-4DDE-97EC-923F96D67B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43591F6-DF8C-4DDE-97EC-923F96D67B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43591F6-DF8C-4DDE-97EC-923F96D67B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
