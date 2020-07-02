@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Threading;
 using System.Linq;
+using System.Text;
 
 namespace LINQExample
 {
@@ -14,7 +15,10 @@ namespace LINQExample
             {new Customer(1, "Michal", "Mustermann", "Musterstrasse", "889221", "Musterstadt", new List<Order>()) },
             {new Customer(1, "Michaela", "Mustermann", "Musterstrasse", "889221", "Musterstadt", new List<Order>()) },
             {new Customer(1, "Daniel", "Düsentrieb", "Erfinderweg 1", "79999", "Entenhausen", new List<Order>()) },
-            {new Customer(1, "Donald", "Duck", "Entenstraße 2", "79999", "Entenhausen", new List<Order>()) }
+            {new Customer(1, "Donald", "Duck", "Entenstraße 2", "79999", "Entenhausen", new List<Order>()) },
+            {new Customer(1, "Torsten", "Tester", "Testweg -1", "D-743398", "Testenhausen", new List<Order>()) },
+            {new Customer(1, "Otto", "Walkes", "Friesenstraße 2", "128767", "Emden", new List<Order>()) },
+            {new Customer(1, "Tick", "Duck", "Entenstraße 2", "79999", "Entenhausen", new List<Order>()) }
         };
         static void Main(string[] args)
         {
@@ -29,11 +33,17 @@ namespace LINQExample
                          orderby c.lastName
                          select c;
 
-            foreach (Customer c in subset)
-            {
-                Console.WriteLine(c.lastName + ", " + c.firstName);
-            }
+            print(subset);
+
+            var subset2 = from c in customers orderby c.lastName select c;
+            print(subset2);
         }
+
+        private void print(IEnumerable<Customer> c){
+            foreach (var cust in c) {
+                Console.WriteLine(cust);
+            }
+        } 
     }
 
     class Customer
@@ -72,6 +82,21 @@ namespace LINQExample
         public override int GetHashCode()
         {
             return HashCode.Combine(customerID, firstName, lastName, street, postCode, city, orders);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("[");
+            sb.Append($"ID: {customerID} ");
+            sb.Append($"Vorname: {firstName} ");
+            sb.Append($"Nachname: {lastName} ");
+            sb.Append($"Strasse:  {street} ");
+            sb.Append($"PostClode: {postCode} ");
+            sb.Append($"City: {city}");
+            sb.Append("]");
+
+            return sb.ToString();
         }
     }
 
