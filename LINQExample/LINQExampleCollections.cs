@@ -24,6 +24,7 @@ namespace LINQExample
         {
             LINQExampleCollections lec = new LINQExampleCollections();
             lec.startAction();
+            Console.ReadLine();
         }
 
         private void startAction()
@@ -37,6 +38,11 @@ namespace LINQExample
 
             var subset2 = from c in customers orderby c.lastName select c;
             print(subset2);
+
+            var subset3 = (from c in customers orderby c.lastName select c).Skip(2).Take(3);
+            print(subset3);
+
+
         }
 
         private void print(IEnumerable<Customer> c){
