@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpForDummies", "CSharpForDummies\CSharpForDummies.csproj", "{688CE873-8690-4CCB-8885-8A352A21D1BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpForDummies", "CSharpForDummies\CSharpForDummies.csproj", "{688CE873-8690-4CCB-8885-8A352A21D1BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskInterruption", "TaskInterruption\TaskInterruption.csproj", "{086F3E47-522C-49F0-ABDA-4C447FC40F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskInterruption", "TaskInterruption\TaskInterruption.csproj", "{086F3E47-522C-49F0-ABDA-4C447FC40F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitExample", "AsyncAwaitExample\AsyncAwaitExample.csproj", "{B43591F6-DF8C-4DDE-97EC-923F96D67B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwaitExample", "AsyncAwaitExample\AsyncAwaitExample.csproj", "{B43591F6-DF8C-4DDE-97EC-923F96D67B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\LINQExample.csproj", "{15F0D91D-9BFD-433D-89BA-CC28040180B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQExample", "LINQExample\LINQExample.csproj", "{15F0D91D-9BFD-433D-89BA-CC28040180B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQCSVRead", "LINQCSVRead\LINQCSVRead.csproj", "{76E391F2-6EA9-4F78-85E4-6918B613EC3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F0D91D-9BFD-433D-89BA-CC28040180B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E391F2-6EA9-4F78-85E4-6918B613EC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E391F2-6EA9-4F78-85E4-6918B613EC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E391F2-6EA9-4F78-85E4-6918B613EC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E391F2-6EA9-4F78-85E4-6918B613EC3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
